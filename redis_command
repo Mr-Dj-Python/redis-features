@@ -1,0 +1,15 @@
+# sorted set commands
+
+ZADD game:1 10 id:a
+ZADD game:1 20 id:b
+ZADD game:1 30 id:c
+ZADD game:1 40 id:d
+zincrby game:1 20 id:c
+zrevrange game:100
+
+
+# geo locations
+GEOADD locations - 122.375 37.618889 SFO
+GEOADD locations -115.1537 36.0840 McCarron
+GEODIST locations SFO McCarron km
+GEORADIUSBYMEMBER locations reinvent 664 km
