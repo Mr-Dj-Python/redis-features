@@ -1,3 +1,5 @@
+# python code
+
 from redlock import RedLock
 import redis
 
@@ -11,6 +13,5 @@ print(f"setting value redis key last_name")
 redis_obj.set('last_name', 'Ocean11')
 
 print("new value set")
-breakpoint()
 name_lock.release()
 
